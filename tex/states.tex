@@ -1,0 +1,23 @@
+% The MDPI table float is called specialtable
+\begin{specialtable}[H] 
+\centering
+\caption{States and main variables of the model.}
+\label{tab:states}
+%% \tablesize{} % You can specify the fontsize here, e.g., \tablesize{\footnotesize}. If commented out \small will be used.
+\begin{tabular}{lllll}
+\toprule
+\textbf{Name}	& \textbf{Description}	& \textbf{Units} \\
+\midrule
+	$\mu$ & Specific cell growth rate. & $min^{-1}$\\
+	$r$ & Free mature ribosomes in the cell. & $molec \cdot cell^{-1}$\\
+	$m_r$ & Total mass of ribosomal proteins in the cell. & $fg \cdot cell^{-1}$\\
+	$m_{nr}$ & Total mass of non ribosomal proteins in the cell. & $fg \cdot cell^{-1}$\\
+	$m_A$ & Total mass of protein $A$ in the cell. & $fg \cdot cell^{-1}$\\
+	$F_{in}$ & Input media flux. & $L \cdot min^{-1}$\\
+	$F_{out}$ & Output waste flux. & $L \cdot min^{-1}$\\
+	$V$ & Volume of culture in the biorreactor. & $L$\\
+	$n$ & Concentration of cells in the biorreactor. & $cell \cdot L^{-1}$\\
+	$s$ & Concentration of substrate in the biorreactor. & $g \cdot L^{-1}$\\
+\bottomrule
+\end{tabular}
+\end{specialtable}

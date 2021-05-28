@@ -1,0 +1,29 @@
+% The MDPI table float is called specialtable
+\begin{specialtable}[H] 
+\centering
+\caption{Internal variables of the model.}
+\label{tab:variables}
+%% \tablesize{} % You can specify the fontsize here, e.g., \tablesize{\footnotesize}. If commented out \small will be used.
+\begin{tabular}{lllll}
+\toprule
+\textbf{Name}	& \textbf{Description}	& \textbf{Equation} & \textbf{Units} \\
+\midrule
+	$\nu(s)$ & Effective translation rate per ribosome. & $\nu(s) = \nu_{max} s / (s+K_s)$ & $aa \cdot min^{-1}$\\
+	$k_e(s)$ & Translation initation rate. & $k_e(s) = \nu(s) / l_e$ & $min^{-1}$\\
+	$J_{sum}(\mu,r,s)$ & Total sum of all the J in the cell. & $J_{sum}(\mu,r,s) = \sum_{i=r,nr,A} N_i J_i(\mu,r,s)$ & $adim$\\
+	$K^r_{C_0}(s)$ & Effective RBS affinity of ribosomal mRNA. & $K^r_{C_0}(s) = k_b^r/(k_u^r + k_e(s))$ & $cell \cdot molec^{-1}$\\
+	$E_{m}^r$ & Ribosomes density related term for ribsomal mRNA. & $E_m^r = 0.62 l_p^r / l_e$ & $adim$\\
+	$J_r(\mu,r,s)$ & Average J value of one ribosomal \textit{E.coli.} gene. & $J_r(\mu,r,s) = E_m^r \omega_r / (d_m^r/K^r_{C_0}(s) + \mu r)$ & $adim$\\
+	$r_t(m_r)$ & Number of mature and inmmature ribosomes. & $r_t(m_r) = m_r/r_w$ & $molec \cdot cell^{-1}$\\
+	$\phi_b(\mu,r,s)$ & Fraction of translating ribosomes of $\phi_t r_t(m_r)$. & $\phi_b(\mu,r,s) = J_{sum}(\mu,r,s)/(1 + J_{sum}(\mu,r,s))$ & $adim$\\
+	$K^{nr}_{C_0}(s)$ & Effective RBS affinity of non-ribosomal mRNA. & $K^{nr}_{C_0} = k_b^{nr}/(k_u^{nr} + k_e(s))$ & $cell \cdot molec^{-1}$\\
+	$E_{m}^{nr}$ & Ribosomes density related term for non-ribsomal mRNA. & $E_{m}^{nr} = 0.62 l_p^{nr} / l_e$ & $adim$\\
+	$J_{nr}(\mu,r,s)$ & Average J value of one non-ribosomal \textit{E.coli.} gene. & $J_{nr}(\mu,r,s) = E_m^{nr} \omega_{nr} / (d_m^{nr}/K_{C_0}^{nr}(s) + \mu r)$ & $adim$\\
+	$K^A_{C_0}(s)$ & Effective RBS affinity of protein A mRNA. & $K^A_{C_0}(s) = k_b^A /(k_u^A + k_e(s))$ & $cell \cdot molec^{-1}$\\
+	$E_m^A$ & Ribosomes density related term for protein A mRNA. & $E_m^A = 0.62 l_p^A/l_e$ & $adim$\\
+	$J_A(\mu,r,s)$ & Average J value of one protein A gene. & $J_A(\mu,r,s) = E_m^A \omega_A / (d_m^A/K_{C_0}^A(s) + \mu r)$ & $adim$\\
+	$m_p(\mu)$ & Total protein mass of the cell. & $m_p(\mu) = c_1 \mu^2 + c_2 \mu + c_3$ & $fg \cdot cell^{-1}$\\
+	$x(n,\mu)$ & Concentration of biomass in the biorreactor. & $x(n,\mu) = n m_p(\mu)$ & $g/L$\\
+\bottomrule
+\end{tabular}
+\end{specialtable}

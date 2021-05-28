@@ -1,0 +1,44 @@
+% The MDPI table float is called specialtable
+\begin{specialtable}[H] 
+\centering
+\caption{Parameters of the model.}
+\label{tab:parameters}
+%% \tablesize{} % You can specify the fontsize here, e.g., \tablesize{\footnotesize}. If commented out \small will be used.
+\begin{tabular}{lllll}
+\toprule
+\textbf{Name}	& \textbf{Description}	& \textbf{Value} & \textbf{Units} & \textbf{Reference} \\
+\midrule
+	$K_s$ & Half activation threshold of growth rate. & 0.1802 & $g \cdot L^{-1}$ & \cite{Zhuang2013} \\
+	$\nu_{max}$ & Maximum effective translation rate per ribosome. & 1260 & $aa \cdot min^{-1}$ & \cite{Milo2009} \\
+	$m_{aa}$ & Average aminoacid mass. & $182.6 \cdot 10^{-9}$ & $fg \cdot aa^{-1}$ & \cite{Sundararaj2004} \\
+	$l_e$ & Ribosome occupancy length. & 25 & $aa$ & estimated \cite{Fernandes2017,Eriksen2017,Picard2013,Siwiak2013} \\
+	$\phi_t$ & Fraction of mature available ribosomes relative to the total. & 0.7796 & $adim$ & \cite{doi:10.1111/febs.13258,Bremer:2008}* \\
+	$l_p^{r}$ & Mean length of ribosomal proteins. & 195 & $aa$ & calculated from \cite{Hausser2019} \\
+	$d_m^{r}$ & Mean degradation rate of ribosomal mRNA. & 0.16 & $min^{-1}$ & calculated from \cite{Hausser2019} \\
+	$k_u^{r}$ & Dissotiation rate RBS-ribosome for ribosomal mRNA. & 135 & $min^{-1}$ & \cite{nobel2020resources}* \\
+	$k_b^r$ & Association rate RBS-ribosome for ribosomal mRNA. & 8.853 & $cell \cdot min^{-1} \cdot molec^{-1}$ & \cite{nobel2020resources}* \\
+	$N_r$ & Number of proteins that make up a ribosome. & 55 & $adim$ & \cite{nobel2020resources} \\
+	$\omega_r$ & Average transcription rate for ribosomal proteins. & 4.8658 & $molec \cdot min^{-1} \cdot cell^{-1}$ & \cite{nobel2020resources}* \\
+	$r_w$ & Weight of a ribosome. & 0.0045 & $fg$ & \cite{Bremer:2008} \\
+	$l_p^{nr}$ & Mean length of non-ribosomal proteins. & 333 & $aa$ & calculated from \cite{Hausser2019} \\
+	$d_m^{nr}$ & Mean degradation rate of non-ribosomal mRNA. & 0.2 & $min^{-1}$ & calculated from \cite{Hausser2019} \\
+	$k_u^{nr}$ & Dissotiation rate RBS-ribosome for non-ribosomal mRNA. & 6.1297 & $min^{-1}$ & \cite{nobel2020resources}* \\
+	$k_b^{nr}$ & Association rate RBS-ribosome for non-ribosomal mRNA. & 14.9971 & $cell \cdot min^{-1} \cdot molec^{-1}$ & \cite{nobel2020resources}* \\
+	$N_{nr}$ & Number of non ribosomal proteins expressed at one time. & 1735 & $adim$ & \cite{nobel2020resources} \\
+	$\omega_{nr}$ & Average transcription rate for non ribosomal proteins. & 0.03 & $molec \cdot min^{-1} \cdot cell^{-1}$ & \cite{nobel2020resources}* \\
+	$l_p^A$ & Length of protein A. & 195 & $aa$ & ** \\
+	$d_m^A$ & Mean degradation rate of protein A mRNA. & 0.16 & $min^{-1}$ & ** \\
+	$k_u^A$ & Dissotiation rate RBS-ribosome for protein A mRNA. & [6 135] & $min^{-1}$ & \cite{deSmit2003,Kierzek2001} \\
+	$k_b^A$ & Association rate RBS-ribosome for protein A mRNA. & [3 15] & $cell \cdot min^{-1} \cdot molec^{-1}$ & \cite{deSmit2003,Kierzek2001,SALIS201119} \\
+	$N_A$ & Number of copies of gene $A$. & [1 70] & $adim$ & ** \\
+	$\omega_A$ & Average transcription rate for protein $A$. & [0 5] & $molec \cdot min^{-1} \cdot cell^{-1}$ & ** \\
+	$c_1$ & First coefficient of mass equation. & 239089 & $fg \cdot cell^{-1} \cdot min^2$ & \cite{nobel2020resources}* \\
+	$c_2$ & Second coefficient of mass equation. & 7432 & $fg \cdot cell^{-1} \cdot min$ & \cite{nobel2020resources}* \\
+	$c_3$ & Third coefficient of mass equation. & 37.06 & $fg \cdot cell^{-1}$ & \cite{nobel2020resources}* \\
+	$y$ & Biomass yield on glucose. & 0.45 & $g^{ }_{biomass} \cdot g^{-1}_{substrate}$ & \cite{Link2008} \\
+	$s_{feed}$ & Fresh media substrate concentration. & 3.6 & $g \cdot L^{-1}$ & \cite{Zhuang2013} \\
+\bottomrule
+\end{tabular}
+{\raggedright * These parameters were re-optimized following the methods described in \cite{nobel2020resources} to better fit the wild-type at low growth rate, since that range is the most relevant for this work. \par}
+{\raggedright ** Without loss of generality in the results, we choose $l_p^A$ and $d_m^A$ to be equal to the ribosomal parameters, and the range of $N_A$ and $\omega_A$ to be in the order of ribosomal and non-ribosomal parameters. \par}
+\end{specialtable}
