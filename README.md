@@ -1,4 +1,8 @@
+# Matlab Version
+
 We used Matlab version 9.9.0.1467703 (R2020b), we did not test if this code works with other Matlab versions.
+
+# Repository structure
 
 ./build/
   In this folder it is placed all the automatically generated files that simulate the multiscale model.
@@ -7,7 +11,7 @@ We used Matlab version 9.9.0.1467703 (R2020b), we did not test if this code work
   In this folder we save all the figures created with generateFigs.
 
 ./model/
-  In this folder we placed the definition of the multiscale model using OneModel syntax (for more information see https://github.com/sb2cl/OneModel)
+  In this folder we placed the definition of the multiscale model using OneModel syntax (for more information see https://github.com/sb2cl/OneModel).
 
 ./OneModel/
   Copy of the version of OneModel we used to simulate and define the multiscale model.
