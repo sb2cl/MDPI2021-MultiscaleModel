@@ -1,0 +1,20 @@
+```MATLAB exec --path ../examples/ex0_readme
+@[ini=%% 1,end=%% 3](../examples/ex0_readme/main.m)
+@[ini=%% 4,end=%%](../examples/ex0_readme/main.m)
+```
+
+# Autogenerate ode function
+
+```sh exec --path ../examples/ex0_readme/build
+cat modelOdeFun.m
+```
+
+```sh exec --path ../examples/ex0_readme/build
+cat modelDriverOdeFun.m
+```
+
+# Import a model
+
+```MATLAB exec --path ../examples/ex1_import
+m = OneModel.load('./model/importModel.mc')
+```
