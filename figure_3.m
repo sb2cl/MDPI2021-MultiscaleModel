@@ -146,7 +146,7 @@ for i = size(ld.output,1):-1:1
 end
 set(gca,'Fontsize',axisSize);
 grid on;
-xlabel('$K^A_{C_0}(s)$ $\; [cell \cdot molec^{-1}]$','interpreter','latex','FontSize',fontSize);
+xlabel('$K^A_{C_0}(s_n)$ $\; [cell \cdot molec^{-1}]$','interpreter','latex','FontSize',fontSize);
 ylim([0 0.025]);
 xlim([0 0.3]);
 

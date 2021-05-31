@@ -178,7 +178,7 @@ plot(concept_fedbatch_data(:,10),concept_fedbatch_data(:,6),'.');
 plot(concept_continous_data(:,10),concept_continous_data(:,6),'.');
 set(gca,'Fontsize',axisSize);
 grid on;
-xlabel('$K^A_{C_0}(s)$ $\; [cell \cdot molec^{-1}]$','interpreter','latex','FontSize',fontSize);
+xlabel('$K^A_{C_0}(s_n)$ $\; [cell \cdot molec^{-1}]$','interpreter','latex','FontSize',fontSize);
 % ylabel('Growth rate $\mu$ $\; [min^{-1}]$','interpreter','latex','FontSize',fontSize);
 ylim([0 0.025]);
 
@@ -195,7 +195,7 @@ plot(concept_fedbatch_data(:,7).*concept_fedbatch_data(:,10),concept_fedbatch_da
 plot(concept_continous_data(:,7).*concept_continous_data(:,10),concept_continous_data(:,6),'.');
 set(gca,'Fontsize',axisSize);
 grid on;
-xlabel('$N_A \omega_A K^A_{C_0}(s)$ $\; [min^{-1}]$','interpreter','latex','FontSize',fontSize);
+xlabel('$N_A \omega_A K^A_{C_0}(s_n)$ $\; [min^{-1}]$','interpreter','latex','FontSize',fontSize);
 ylabel('Growth rate $\mu$ $\; [min^{-1}]$','interpreter','latex','FontSize',fontSize);
 ylim([0 0.025]);
 

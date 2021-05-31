@@ -119,7 +119,7 @@ set(f,'Position',[2000,0,380,350]);
 clf(1);
 
 lineStyle = {':',' ','--'};
-lineColor = {myColors.yellow, myColors.orange};
+lineColor = {myColors.orange, myColors.yellow};
 
 subplot(2,2,1);
 hold on;
@@ -147,7 +147,7 @@ ylim([0 1.5]);
 subplot(2,2,3);
 hold on;
 for i = 1:sep
-    plot(out.substrateSweep.s(i,:),out.substrateSweep.yield(i,:),lineStyle{mod(i,3)+1},'LineWidth',1.15,'Color',lineColor{1+(i>3)});
+    plot(out.substrateSweep.s(i,:),out.substrateSweep.yield(i,:),'LineWidth',1.15);
 end
 set(gca,'Fontsize',axisSize);
 grid on;
@@ -158,7 +158,7 @@ ylim([0 0.35]);
 subplot(2,2,4);
 hold on;
 for i = 1:sep
-    plot(out.substrateSweep.s(i,:),out.substrateSweep.muMean(i,:),lineStyle{mod(i,3)+1},'LineWidth',1.15,'Color',lineColor{1+(i>3)});
+    plot(out.substrateSweep.s(i,:),out.substrateSweep.muMean(i,:),'LineWidth',1.15);
 end
 set(gca,'Fontsize',axisSize);
 grid on;
