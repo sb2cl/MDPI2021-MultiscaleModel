@@ -9,8 +9,7 @@ opts.massEq = 'interpolated';
 % [substrateFix bioreactor]
 opts.bioreactor = 'nuFix';
 
-m = OneModel.load('./model/multiscale.mc',opts);
-% m = multiscale(opts);
+m = OneModel.load('./model/multiscale.mc','opts',opts);
 
 % Then, we initialize a SimulationClass object with the model data.
 s = SimulationClass(m);
